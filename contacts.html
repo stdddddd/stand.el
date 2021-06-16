@@ -1,0 +1,174 @@
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Контакты</title>
+	<link rel="shortcut icon" type="image/png" href="style/img/logo.png">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	
+	<script type="text/javascript" src="formsend/script.js"></script>
+ 	<style>
+		.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="maincontact">
+				<div class="logo">
+					<a href="index.html"><img src="style/img/flogo.png"></a>
+						<br>
+						Поставка электрооборудования и полный комплекс
+						<br>
+						инжиниринговых услуг
+				</div>
+				<div class="phone">
+					<a href="tel:+73952958804">+7 (3952) 95-88-04</a></div>
+
+				<div class="fax">
+					<a href="tel:+73952767840">+7 (3952) 767-840</a></div>
+				
+				<div class="address">
+					664081 г.Иркутск, ул.Красноказачья 115, оф.427</div>
+				
+				<div class="mail">
+					<a href="mailto:post@stand-energo.ru">post@stand-energo.ru</a></div>
+				
+				</div>
+			</div>
+		</div>
+	</header>
+
+<nav>
+		<div class="wrapper">
+			<ul class="menu"> 
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="about.html">О компании</a></li>
+				<li><a href="products.html">Продукция</a></li>
+				<li><a href="features.html">Услуги</a></li>
+				<li><a href="clients.php">Наши клиенты</a></li>
+				<li><a href="portfolio.html">Портфолио</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+<main>
+
+	<div class="wrapper">
+		<div class="form">
+			<form action="contacts.php" method="post" id="form" class="form__body">
+				<div class="form__item">
+					<label for="formName" class="form__label">Имя</label>
+					<input id="formName" type="text" name="name" class="form__input _req">
+				</div>
+				<div class="form__item">
+					<label for="formSName" class="form__label">Фамилия</label>
+					<input id="formName" type="text" name="sname" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formTName" class="form__label">Отчество</label>
+					<input id="formName" type="text" name="tname" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formEmail" class="form__label">Электронный адрес</label>
+					<input id="formEmail" type="text" name="email" class="form__input _req _email">
+				</div>
+
+				<div class="form__item">
+					<label for="phone" class="form__label">Телефон</label>
+					<input id="phone" type="text" name="phone" class="form__input">
+				</div>
+				<br>
+				<div class="form__item">
+					<label for="formMessage" class="form__label">Текст</label>
+					<textarea name="message" id="formMessage" class="form__input"></textarea>
+				</div>
+	
+<br>
+
+
+				<p id="message" style="text-align: center; color: #DC143C; font-size: 20px;"></p>
+				<p id="message_1" style="text-align: center; color: #DC143C; font-size: 20px;"></p>
+
+				<div class="form__item">
+					<div class="checkbox">
+						<input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input">
+						<label for="formAgreement" class="checkbox__label"><span>Я даю согласие на обработку персональных данных в соответствии с <a href="#">Условиями</a>.</span></label>
+					</div>
+				</div>
+				<input type="hidden" name="hidden" value="ok">
+				<button type="submit" class="form__button" onClick="return ValidForm(this.form);" >Отправить</button>
+
+			</form>
+		</div>
+	</div>
+
+	
+</main>
+
+
+
+	<footer>
+		<div class="wrapper">
+			<div class="left footinfo">
+			© 2015 ООО «Стандарт-Энерго»<br>
+			Все права защищены<br><br>
+
+<div class="footer-menu">
+<ul>
+		<li class="selected"><a href="index.html">Главная</a></li>
+		<li><a href="about.html">О компании</a></li>
+		<li><a href="products.html">Продукция</a></li>	
+		<li><a href="features.html">Услуги</a></li>
+		<li><a href="clients.php">Наши клиенты</a></li>
+		<li><a href="portfolio.html">Портфолио</a></li>
+		<li><a href="contacts.html">Контакты</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+		</div>
+
+		</footer>	
+
+	</body>
+
+</html>
